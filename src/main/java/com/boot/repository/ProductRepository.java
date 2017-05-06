@@ -1,0 +1,14 @@
+package com.boot.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.boot.model.Product;
+
+/**
+ * 
+ * @author Vassil Vassilev
+ *
+ */
+public interface ProductRepository extends JpaRepository<Product, Long> {
+
+}
