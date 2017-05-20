@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.boot.model.Product;
-import com.boot.repository.ProductRepository;
+import com.boot.service.ProductService;
 
 /**
  * A controller implementing the main CRUD operations
@@ -23,35 +23,31 @@ import com.boot.repository.ProductRepository;
 public class ProductController {
 	
 	@Autowired
-	private ProductRepository productRepository;
+	private ProductService productService;
 
 	@RequestMapping(value = "products", method = RequestMethod.GET)
 	public List<Product> list() {
-		return productRepository.findAll();
+		return productService.list();
 	}
 
 	@RequestMapping(value = "products", method = RequestMethod.POST)
 	public Product create(@RequestBody Product product) {
-		return productRepository.saveAndFlush(product);
+		return productService.create(product);
 	}
 
 	@RequestMapping(value = "products/{id}", method = RequestMethod.GET)
 	public Product get(@PathVariable Long id) {
-		return productRepository.findOne(id);
+		return productService.get(id);
 	}
 
 	@RequestMapping(value = "products/{id}", method = RequestMethod.PUT)
 	public Product update(@PathVariable Long id, @RequestBody Product product) {
-		Product existingProduct = productRepository.findOne(id);
-		BeanUtils.copyProperties(product, existingProduct);
-		return productRepository.saveAndFlush(existingProduct);
+		return productService.update(id, product);
 	}
 
 	@RequestMapping(value = "products/{id}", method = RequestMethod.DELETE)
 	public Product delete(@PathVariable Long id) {
-		Product existingProduct = productRepository.findOne(id);
-		productRepository.delete(existingProduct);
-		return existingProduct;
+		return productService.delete(id);
 	}
 	
 }
