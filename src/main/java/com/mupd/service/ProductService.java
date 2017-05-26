@@ -1,11 +1,11 @@
-package com.boot.service;
+package com.mupd.service;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.boot.model.Product;
+import com.mupd.model.Product;
 
 /**
  * The service implementing the main CRUD operations

@@ -1,4 +1,4 @@
-package com.boot.config;
+package com.mupd.config;
 
 import javax.sql.DataSource;
 

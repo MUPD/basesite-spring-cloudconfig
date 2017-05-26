@@ -1,4 +1,4 @@
-package com.boot.model;
+package com.mupd.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package com.boot.controller;
+package com.mupd.controller;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.boot.model.Product;
-import com.boot.service.ProductService;
+import com.mupd.model.Product;
+import com.mupd.service.ProductService;
 
 /**
  * A controller implementing the main CRUD operations

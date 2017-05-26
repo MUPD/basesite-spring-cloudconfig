@@ -1,4 +1,4 @@
-package com.boot.service;
+package com.mupd.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.boot.model.Product;
-import com.boot.repository.ProductRepository;
+import com.mupd.model.Product;
+import com.mupd.repository.ProductRepository;
 
 /**
  * The implementation of the main CRUD operations

@@ -1,4 +1,4 @@
-package com.boot.controller;
+package com.mupd.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +13,7 @@ public class HomeController {
 	
 	@RequestMapping("/")
 	public String home() {
-		return "Bell Test Project";
+		return "MUPD Test Project";
 	}
 
 }

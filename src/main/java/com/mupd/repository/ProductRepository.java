@@ -1,8 +1,8 @@
-package com.boot.repository;
+package com.mupd.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.boot.model.Product;
+import com.mupd.model.Product;
 
 /**
  * 
