@@ -2,8 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.bell</groupId>
-  <artifactId>bell</artifactId>
+  <groupId>com.mupd</groupId>
+  <artifactId>mupd</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   
@@ -13,7 +13,7 @@
     <version>1.3.1.RELEASE</version>
   </parent>
 
-  <name>bell</name>
+  <name>mupd</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -37,7 +37,11 @@
 		<groupId>org.flywaydb</groupId>
 	  	<artifactId>flyway-core</artifactId>
 	</dependency>
-
+	<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+	
 
     <dependency>
       <groupId>junit</groupId>
